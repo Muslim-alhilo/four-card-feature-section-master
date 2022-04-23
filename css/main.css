@@ -1,0 +1,102 @@
+* {
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 15px;
+}
+@media (max-width: 767px) {
+  html {
+    font-size: 12px;
+  }
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(0, 0%, 98%);
+}
+.main {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+}
+@media (min-width: 768px) {
+  .main {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .main {
+    width: 950px;
+  }
+}
+@media (min-width: 1200px) {
+  .main {
+    width: 1150px;
+  }
+}
+.main .main-text {
+  text-align: center;
+}
+.main .main-text h3 {
+  font-size: 2.2885rem;
+  font-weight: 200;
+  color: hsl(234, 12%, 34%);
+}
+.main .main-text span {
+display: block;
+  font-weight: 600;
+  color: hsl(234, 12%, 34%);
+}
+.main .main-text p {
+  color: hsl(229, 6%, 66%);
+  max-width: 650px;
+  margin: 20px auto 0;
+  font-size: 1.3rem;
+}
+.main .cols {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+}
+.main .box-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+} 
+.main .box {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  border-top: 5px solid;
+  box-shadow: 0px 5px 10px #ccc;
+}
+.main .box.one {
+  border-color: hsl(180, 62%, 55%);
+}
+.main .box.two {
+  border-color: hsl(0, 78%, 62%);
+}
+.main .box.three {
+  border-color: hsl(34, 97%, 64%);
+}
+.main .box.four {
+  border-color: hsl(212, 86%, 64%);
+}
+.main .box h4 {
+  font-size: 1.7rem;
+  color: hsl(234, 12%, 34%);
+  margin-bottom: 10px;
+}
+.main .box p {
+  color: hsl(229, 6%, 66%);
+  font-size: 1.2rem;
+  line-height: 1.7;
+  padding-bottom: 40px;
+}
+.main .box .image {
+  text-align: end;
+}
